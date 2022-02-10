@@ -1,0 +1,190 @@
+/* general settings */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+/*beginning of body css settings */
+body {
+    background-color: #ecebe2;
+    margin: 0;
+}
+/*css setting of navbar and h1 tag in header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    background-color: #95a8ac;
+    color: #ecebe2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 2px solid #223745;
+    border-radius: 5px;
+  }
+h1 {
+    text-align: left;
+    color: #ecebe2;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+    margin-left: 75%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    justify-content: space-evenly;
+} 
+.navButton {
+    background-color: #818bf5;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+  }
+/* end of css for header section */
+
+
+
+/* css for side bar of about me */
+#aboutme { 
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 21px;
+    margin-left: 15px;
+    margin-top: 25px;
+  
+    float:left;
+    background-color: #95a8ac;
+    border: 2px solid #223745;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20pt;
+}
+hr{
+    border-top: 1px solid #223745;
+  }
+
+/*beginning of css of main, covers both section and all articles */
+main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 2%;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:stretch; 
+    justify-content: right;
+}
+article {
+    padding: 40px;
+    margin: 0px 50px 50px 50px;
+    background-color: #95a8ac;
+    flex: 200px;
+    text-align: center;
+    border: 2px solid #223745;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: right;
+    justify-content: right;
+    font-size: 20pt;
+}
+/* .assignment1{
+    border: 2px solid black;
+    display: block;
+}
+.assignment2{
+    border: 2px solid black;
+    display: block;
+
+}
+.assignment3{
+    border: 2px solid black;
+    display: block;
+
+} */
+
+/* end of css styling for main */
+
+/* css styling for footer*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #818bf5;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18pt;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2%;
+    color: #ecebe2;
+    background-color: #95a8ac;
+    border-top: 2px solid #223745;
+    border-radius: 5px;
+  }
+
+  /* mdeia query */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+}
